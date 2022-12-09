@@ -1,0 +1,28 @@
+.main {
+    width: 800px;
+    height: 350px;
+    background-color: rgb(245, 245, 177);
+    padding-top: 2px;
+}
+
+.title {
+    background-color: #bff8f8;
+    line-height: 40px;
+    margin-bottom: 4px;
+}
+
+tr label, td:nth-child(even) {
+    color: blue;
+    margin-left: 6px;
+    padding-right: 34px;
+}
+
+#gender {
+    color: black;
+}
+
+.button {
+    margin-left: 110px;
+}
+
+

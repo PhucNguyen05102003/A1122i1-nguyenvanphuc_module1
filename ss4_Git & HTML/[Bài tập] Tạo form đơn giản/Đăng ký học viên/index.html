@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="" class="wuffo">
+            <div class="title">
+                <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+            </div>
+            <table>
+                <tr>
+                    <td><label for="username">Họ và tên</label></td>
+                    <td><input type="textbox" placeholder="Username" name="Username" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Ngày sinh</label></td>
+                    <td><input type="textbox" placeholder="mm/dd/yyyy" name="mm/dd/yyyy" id="date" size="14"></td>
+                </tr>
+                <tr>
+                    <td><label>Giới tính</label></td>
+                    <td id="gender">
+                        <input type="radio" name="gender" > Nam
+                        <input type="radio" name="gender" > Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Địa chỉ</label></td>
+                    <td><textarea name="address" id="address" cols="25" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Lớp</label></td>
+                    <td>
+                        <select name="class">
+                            <option value="">=== Chọn lớp ===</option>
+                            <option value="A1122i1">A1122i1</option>
+                            <option value="A1212i2">A1212i2</option>
+                            <option value="A1331i3">A1331i3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="textbox" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phonenumber">Điện thoại</label></td>
+                    <td><input type="textbox" name="phonenumber" id="phonenumber"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="button">
+                            <input type="submit" name="register" value="Đăng ký">
+                            <input type="submit" name="Retype" value="Nhập lại">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

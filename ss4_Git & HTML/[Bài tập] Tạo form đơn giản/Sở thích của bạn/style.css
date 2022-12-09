@@ -1,0 +1,40 @@
+.main {
+    width: 800px;
+    height: 400px;
+    background-color: rgba(158, 255, 255, 0.968);
+    display: inline-block;
+}
+
+
+
+.table_1 {
+    border: 1px;
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    margin-left: 158px;
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+
+.title {
+    color: blue;
+    margin-left: 36px;
+}
+
+th {
+    background-color: orangered ;
+    color: white;
+}
+
+.button {
+    position: absolute;
+    margin-left: 142px;
+}
+
+.color {
+    color: orangered;
+}
+
+
