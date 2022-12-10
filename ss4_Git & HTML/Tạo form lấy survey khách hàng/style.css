@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+th, .margin {
+    width: 350px;
+    font-size: 14px;
+    height: 50px;
+    margin-left: 6px;
+}
+
+td {
+    width: 100px;
+    text-align: center;
+}
+
+.age_income {
+    width: 50%;
+    margin-top: 4px;
+}
+    
+.nav {
+    width: 100%;
+    height: 60px;
+}
+
+.nav:hover:active {
+    background-color: yellow;
+    transform: translateY(-1px);
+}
+
+.grender {
+    margin-left: 22px;
+}
+
+.grender_textbox {
+    margin-left: 22px;
+    font-size: 12px;
+}
+
+/* What would you pay for the new product? */
+.money {
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.cent {
+    margin-left: 44px;
+}
+
+.cents {
+    width: 10px;
+    height: 15px;
+    font-size: 10px;
+}
+
+.features_new {
+    width: 100%;
+}
+
+.features {
+    width: 96%;
+}
+
