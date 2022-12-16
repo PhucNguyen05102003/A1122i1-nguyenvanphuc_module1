@@ -1,0 +1,12 @@
+.bang, th, td {
+    border: 1px solid;
+
+}
+
+.tbmon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
