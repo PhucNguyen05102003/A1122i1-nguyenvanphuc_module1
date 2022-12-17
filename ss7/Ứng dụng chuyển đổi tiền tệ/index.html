@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <style>
+        select {
+            margin-left: 18px;
+        }
+        button {
+            margin-left: 18px;
+            background-color: blue;
+            color: white;
+        }
+
+        label{
+            margin-left: 52px;
+        }
+    </style>
+</head>
+<body>
+    <form id="nav" >
+        <label for="amount">Amount</label> <br>
+        <input type="text" name="amount" id="amount">
+        <select name="" id="option_1">
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+        </select>
+        <select name="" id="option_2">
+            <option value="USD"> USD</option>
+            <option value="VND"> VND</option>
+        </select>
+        <button onclick="button()" type="button">Convert</button>
+        <div style="margin-top: 12px; color: blue;" id="kq"></div>
+    </form>
+</script>
+</body>
+</html>
+<script src="./index.js"></script>
