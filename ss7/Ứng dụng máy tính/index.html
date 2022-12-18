@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng máy tính</title>
+    <style>
+        .main {
+            display: inline-block;
+            width: 600px;
+            height: 250px;
+            background-color: aqua;
+            margin-left: 30%;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+        .body {
+            margin-left: 110px;
+        }
+        
+        .last {
+            margin-left: 110px;
+           
+        }
+
+        input {
+            height: 30px;
+        }
+
+        .result_a {
+            margin-top: 14px;
+            margin-left: 110px;
+            color: black;
+            font-size: 30px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form >
+            <table>
+                <div class="head">
+                    <h2>Caculator</h2>
+                </div>
+                <div class="body">
+                    <label for="points_1">
+                        <input type="number" name="point1" id="points_1">
+                    </label>
+                    <label for="points_2">
+                        <input type="number" name="point2" id="points_2">
+                    </label>
+                </div>
+                <br>
+                <br>
+                <div class="last">
+                    <button type="button" onclick="addition()" >addition(+)</button>
+                    <button type="button" onclick="subtraction()" >subtraction(-)</button>
+                    <button type="button" onclick="multiplication()" >multiplication(X)</button>
+                    <button type="button" onclick="division()" >division(/)</button>
+                </div>
+
+                <div class="result_a" id="result"> </div>
+        </form>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
+
+
+
