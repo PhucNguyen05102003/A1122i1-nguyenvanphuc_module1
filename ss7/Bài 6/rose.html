@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose</title>
+</head>
+<body>
+    <div>
+        <label for="sales_list"></label>
+        <input type="number" id="sales_list" placeholder="Nhập danh số bán hàng">
+        <button type="button" onclick="button()">Result</button>
+        <div id="rose"></div>
+    </div>
+</body>
+</html>
+<script>
+    function button() {
+        let sales = +document.getElementById("sales_list").value;
+        let rose;
+        if (sales<=100){
+            rose = sales*5/100;
+            document.getElementById("rose").innerText = "Hoa hồng nhận đc: " +rose;
+        }else if(sales <=300) {
+            rose = sales*10/100;
+            document.getElementById("rose").innerText = "Hoa hồng nhận đc: " +rose;
+        }else if (sales >300){
+            rose = sales*20/100;
+            document.getElementById("rose").innerText = "Hoa hồng nhận đc: " +rose;
+        }
+
+    }
+</script>
