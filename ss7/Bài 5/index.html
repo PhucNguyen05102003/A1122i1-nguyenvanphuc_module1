@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <style>
+        input {
+            margin-top: 16px;
+            margin-left: 12px;
+
+        }
+        button {
+            margin-top: 12px;
+            margin-left: 94px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <label for="test_1">Kiểm tra miệng</label>
+                <input type="number" id="test_1" placeholder="Nhập điểm số">
+            </tr>
+            <br>
+            <tr>
+                <label for="test_2">Kiểm tra giữa kỳ</label>
+                <input type="number" id="test_2" placeholder="Nhập điểm số">
+            </tr>
+            <br>
+            <tr>
+                <label for="test_3">Kiểm tra cuối kỳ</label>
+                <input type="number" id="test_3" placeholder="Nhập điểm số">
+            </tr>
+        </table>
+        <button type="button" onclick="button()">Result</button>
+        <br>
+        <div id="result"></div> 
+    </div>
+</body>
+</html>
+<script>
+    function button(){
+        let test_1 = +document.getElementById("test_1").value;
+        let test_2 = +document.getElementById("test_2").value;
+        let test_3 = +document.getElementById("test_3").value;
+        let tb = (test_1 + test_2*2 + test_3*3)/6; 
+        if (test_1<0 || test_1 > 10 || test_2<0 || test_2 > 10 || test_3<0 || test_3 > 10) {
+            document.getElementById("result").innerText = "Lỗi nha mày"
+        } else {
+            if (tb >= 7.5) {
+            document.getElementById("result").innerText = "Loại A";
+            }else if (tb <7.5 && tb>=6.0){
+            document.getElementById("result").innerText = "Loại B";
+            }else if (tb <6.0 && tb>=4.5) {
+            document.getElementById("result").innerText = "Loại C";
+            }else if (tb < 4.5 && tb>=3.5){
+            document.getElementById("result").innerText = "Loại D";
+            }else {
+            document.getElementById("result").innerText = "Loại E";
+            }
+        }
+    }
+</script>
