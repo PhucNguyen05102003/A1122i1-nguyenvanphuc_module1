@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh switch-case</title>
+</head>
+<body>
+        <div>
+            <input type="number" name="a" id="a">
+            <input type="number" name="b" id="b">
+            <button type="button" onclick="button()">Tính</button>
+            <div style="margin-top: 12px; font-size: 20px;" id="result"></div>
+        </div>
+</body>
+</html>
+<script>
+    function button() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        a %= b;
+        if (a=="0") {
+            document.getElementById("result").innerText = "a chia hết cho b" ;
+        }else {
+            document.getElementById("result").innerText = "a không chia hết cho b";
+        }
+
+    }
+</script>
