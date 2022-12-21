@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="a">
+        <input type="number" id="b">
+        <input type="number" id="c">
+        <button type="button" onclick="button()">Result</button>
+        <div id="result"></div>
+
+    </div>
+</body>
+</html>
+<script>
+    function button(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        if(a>b && a>c){
+            max=a;
+            document.getElementById("result").innerText = "Giá trị lớn nhất" +max;
+        } else
+        if (b>a && b>c) {
+            max=b;
+            document.getElementById("result").innerText = "Giá trị lớn nhất" +max;
+        }else 
+        if (c>a && c>b){
+            max = c;
+            document.getElementById("result").innerText = "Giá trị lớn nhất" +max;
+        }
+    }
+</script>
