@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chương trình tính lãi ngân hàng</title>
+    <style>
+        button {
+            margin-top: 18px;
+        }
+        div{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="money">Số tiền ban đầu</label><br>
+                <input type="number" name="money" id="money">
+            </td>
+            <td>
+                <label for="month">Số tháng gửi</label><br>
+                <input type="number" name="month" id="month">
+            </td>
+            <td>
+                <label for="interest">Lãi xuất hàng năm</label><br>
+                <input type="number" name="interest" id="interest">
+            </td>
+            <td>
+                <button type="button" onclick="button()">Tiền lãi nhận được</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="result"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+<script>
+    function button(){
+        let a = +document.getElementById("money").value;
+        let b = +document.getElementById("month").value;
+        let c = (+document.getElementById("interest").value)/100;   
+        if (a>5000 && b>0 && b<12 && c>0 ){
+            c = c/12
+            document.getElementById("result").innerText = "Tiền lãi của bạn: " +(a*b/12*c);     
+        }else {
+            document.getElementById("result").innerText = "Nhập lại";
+        }
+    }
+</script>
