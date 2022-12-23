@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính diện tích hình vuông</title>
+</head>
+<body>
+    <div>
+        <label for="a">Nhập cạnh hình vuông</label><br>
+        <input type="number" name="canh" id="a" placeholder="Nhập cạnh hình vông">
+        <button onclick="button()">Result</button>
+        <p id="Result"></p>
+    </div>
+</body>
+</html>
+<script>
+    function button() {
+        let a = +document.getElementById("a").value;
+        if(a>0) {
+            document.getElementById("Result").innerText = "diện tích hình vuông :" +a*a;
+        }else {
+            document.getElementById("Result").innerText = "nhập con mẹ số âm rồi";
+        }
+    }
+</script>

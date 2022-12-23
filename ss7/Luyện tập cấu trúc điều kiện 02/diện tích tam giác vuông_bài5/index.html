@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diện tích tam giác vuông</title>
+    <style>
+        button {
+            margin-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <label for="a">Nhập cạnh kề a</label><br>
+                    <input type="number" name="a" id="a">
+                </td>
+                <td>
+                    <label for="b">Nhập cạnh kề b</label><br>
+                    <input type="number" name="b" id="b">
+                </td>
+                <td>
+                    <button type="button" onclick="button()">Result</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="color: blue;" id="result"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+<script>
+    function button(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        if (a>0 && b>0){
+            document.getElementById("result").innerText = "Diện tích tam giác vuông: " + 1/2*a*b;
+        }else {
+            document.getElementById("result").innerText = "Nhập lai nha bạn";
+        }
+    }
+</script>

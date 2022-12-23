@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diện tích hình chữ nhật</title>
+</head>
+<body>
+    <div>
+        <div>
+            <label for="long">Nhập chiều dài</label><br>
+            <input type="number" name="long" id="long">
+        </div>
+        <div>
+            <label for="wide">Nhập chiều rộng</label><br>
+            <input type="number" name="wide" id="wide">
+        </div>
+        <button style="margin-top: 16px;" onclick="button()" type="button">Result</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
+<script>
+    function button() {
+        let a = +document.getElementById("long").value;
+        let b = +document.getElementById("wide").value;
+        if (a>0 && b>0){
+            document.getElementById("result").innerText = "Diện tích hình chữ nhật :" +a*b;
+        }else {
+            document.getElementById("result").innerText = "Nhập lại cha";
+        }
+    } 
+</script>

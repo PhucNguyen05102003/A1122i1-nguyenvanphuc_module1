@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra tuổi</title>
+</head>
+<body>
+    <div>
+       <table>
+            <tr>
+                <td>
+                    <label for="">Nhập số vào</label><br>
+                    <input type="number" name="age" id="age">
+                    <button type="button" onclick="button()">Result</button> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="color: blue;" id="result"></div>
+                </td>
+            </tr>
+       </table>
+    </div>
+</body>
+</html>
+<script>
+    function button(){
+        let age = +document.getElementById("age").value;
+        if ( age<120 && age>0) {
+            document.getElementById("result").innerText = "Đây là tuổi của 1 người";
+        }else {
+            document.getElementById("result").innerText = "Đây không phải là tuổi";
+        }
+    }
+</script>
