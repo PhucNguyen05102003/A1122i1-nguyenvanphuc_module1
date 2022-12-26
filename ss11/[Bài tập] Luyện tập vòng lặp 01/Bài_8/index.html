@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game đoán số</title>
+</head>
+<body>
+    <button onclick="play()">Play</button>
+</body>
+</html>
+<script>
+    function play() {
+        let count = 0;
+        let rd;
+        let a;
+        let b;
+        let x;
+        do {
+            a = +prompt("Nhập giá trị đầu");
+            b = +prompt("Nhập giá trị cuối");
+            do {
+                x = +prompt("Nhập giá trị mà bạn đoán")
+            } while (x < a && x > b )
+              rd = Math.floor(Math.random()* (b-a)+a);
+                alert("Số của máy" + rd);
+                if( x == rd ){
+                    alert("Mày đúng");
+                } else {
+                    alert("Mày sai , nhập lại nha");
+                }
+                count ++
+        }while ( count < 3);
+        
+        
+    }
+</script>
