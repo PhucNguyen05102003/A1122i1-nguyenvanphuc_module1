@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> In tam giác vuông</title>
+</head>
+<body>
+    <script>
+        let n = 5;
+        for ( i = 1 ; i<=n ; i++) {
+            for (j= 1; j<=i ; j++){
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+
+        for ( i= 0; i <=n ; i++){          
+            for(j=1 ; j <= n-i ; j++) {
+                document.write("*");
+            }
+            document.write("<br/>")
+        }
+
+        document.write("<br/>")
+
+
+        for ( i = 1 ; i<=n ; i++) {
+            for ( i= 0; i <=n ; i++){  
+            //Khoảng cách        
+            for(k=1 ; k <= n-i ; k++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (j= 1; j<=i ; j++){
+                document.write("*");
+            }
+            document.write("<br/>");
+            }
+        }
+
+        document.write("<br/>");
+
+        for ( i = 1 ; i<=n ; i++) {
+            for ( i= 0; i <=n ; i++){   
+
+            for(j=1 ; j <= n-i ; j++) {
+                document.write("*");
+            }
+            // Khoảng cách
+            for (k= 1; k<=i ; k++){
+                document.write("&nbsp;&nbsp;");
+            }
+            document.write("<br/>");
+            }
+        }
+
+      
+            
+
+    
+
+        
+
+    </script>
+</body>
+</html>
