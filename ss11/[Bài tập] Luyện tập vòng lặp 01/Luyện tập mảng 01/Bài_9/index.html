@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lưu các phần tử được nối từ hai mảng b và a vào mảng c</title>
+</head>
+<body>
+    <script>
+        let a = [];
+        let b = [];
+        for (let i = 0; i<10 ; i++) {
+            a[i] = +prompt("Mảng 1 "+"Nhập phần tử thứ " + (i+1));//Mảng 1
+        }
+        for (let j = 0; j<10 ; j++) {
+            b[j] = +prompt("Mảng 2 "+"Nhập phần tử thứ " + (j+1));//Mảng 2
+        }
+        let c = a.concat(b);
+        document.write("Mảng C: " + c +",");
+    </script>
+</body>
+</html>

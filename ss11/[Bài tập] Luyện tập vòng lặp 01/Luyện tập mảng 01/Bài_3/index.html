@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chương trình khởi tạo mảng số nguyên</title>
+</head>
+<body>
+    <script>
+        let arr =[];
+        let n = +prompt("Nhập vào số lượng phần tử: ");
+        let max = 0;
+        let sum = 0;
+        let avg = 0;
+        for (let i=0; i <n; i++) {
+            arr[i] = +prompt("Nhập vào phần tử thứ " + (i+1));
+        }
+        for(let j=0;j<arr.length;j++){
+            if(arr[j]>max){
+                max = arr[j];
+                sum += arr[j];
+                avg = sum/arr.length;
+            }                        
+        }
+        document.write("Số lớn nhất của dãy số là: " + max);
+        document.write("</br>Giá trị trung bình của dãy số là: " + avg);
+    </script>
+</body>
+</html>

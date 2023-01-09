@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ điển</title>
+</head>
+<body>
+    <h2>Từ điển</h2>
+        <form>
+            <input type="text" id="input" placeholder="Nhập vào từ bạn cần tra">
+            <input type="button" onclick="seach()" value="Seach">
+        </form>
+ </body>
+</html>
+<script>  
+        // function seach(){
+        //     let eng = ["sad", "rain", "fun", "happy"]
+        //     let vie = ["buồn", "mưa", "vui", "hạnh phúc"];
+        //     let word = document.getElementById("input").value;
+        //     for ( x=0 ; x<eng.length; x++) {
+        //         if (eng.indexOf(word) !==1) {
+        //             document.write(vie[eng.indexOf(word)]);
+        //         }else {
+        //             document.write("Không tìm thấy từ này trong từ điển, xin bạn nhập lại");
+        //         } 
+        //     }
+        // }
+        
+        
+        function seach(){
+            let eng = ["sad", "rain", "fun", "happy"]
+            let vie = ["buồn", "mưa", "vui", "hạnh phúc"];
+            let word = document.getElementById("input").value;
+            if (eng.indexOf(word) !== 1) {
+                let wordin = eng.indexOf(word);
+                document.write(vie[wordin]);
+            }else{
+                document.write( word +"Ko có trong từ điển, đổi từ khác nha");
+            }
+        }
+</script>

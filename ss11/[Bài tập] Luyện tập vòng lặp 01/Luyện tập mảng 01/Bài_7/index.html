@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập số lượng phần tử của mảng");
+        let arr = [];
+        let index = 0;
+        for(let i=1 ; i<=n; i++){
+            arr[i-1] = +prompt("Nhập phần tử thứ " + i);
+        }
+        let V = +prompt("Nhập phần tử số nguyên V");
+        for (let j =0; j<arr.length; j++) {
+            if(arr.indexOf(V) !== -1){
+                arr.splice(arr.indexOf(V), 1);
+                document.write("Mảng sau khi xóa :" + arr);
+            }else {
+                document.write("Nhập lại V");
+            }
+            break
+        }
+    </script>
+</body>
+</html>

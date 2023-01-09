@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập vào số lượng phần tử :");
+        let arr = [];
+        for(let i=1; i <= n; i++){
+            arr[i-1] = +prompt("Nhập phần tử thứ " + i);
+        }
+        for(let j = 0 ; j<arr.length; j++){
+            if(j == arr.length -1) {
+                document.write(arr[j]);
+            }
+        }
+        document.write("Mảng của bạn: "+ arr);
+        document.write("<br/>"+"Mảng đảo ngược: "+arr.reverse());
+
+
+    </script>
+</body>
+</html>

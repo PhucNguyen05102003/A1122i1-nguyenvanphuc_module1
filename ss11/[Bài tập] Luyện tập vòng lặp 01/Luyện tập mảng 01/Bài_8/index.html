@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.</title>
+</head>
+<body>
+    <script>
+        let arr=[];
+        for(let i=0;i<10 ;i++) {
+            arr[i]= +prompt("Nhập phần tử thứ " + (i+1));
+        }
+        arr.sort(function(a, b) {
+            return -a + b;
+        })
+        document.write("Mảng sau khi sắp xếp: "+ arr);
+    </script>
+</body>
+</html>

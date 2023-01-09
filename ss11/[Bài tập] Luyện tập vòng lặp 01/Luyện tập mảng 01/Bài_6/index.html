@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập số lượng phần tử của mảng");
+        let arr = [];
+        for(let i=0 ; i<n; i++){
+            arr[i] = +prompt("Nhập phần tử thứ " +(i+1));
+        }
+        let V = +prompt("Nhập phần tử số nguyên V");
+        for (let j =0; j<arr.length; j++) {
+            
+            if(arr.indexOf(V) !== -1){
+                document.write(V + " is in the array");
+            }else {
+                document.write(V+ " is not in the array");
+            }
+            break
+        }
+    </script>
+</body>
+</html>
