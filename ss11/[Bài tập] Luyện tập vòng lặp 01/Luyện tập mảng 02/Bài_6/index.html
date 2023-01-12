@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) 
+        và thay thế các ký tự này bởi ký tự ( _ )</title>
+</head>
+<body>
+    <script>
+        // let arr = "I-am-studying-at-code-gym";
+        // let arr_2 = arr.replace(/-/g, "_");
+        // document.write("Chuỗi đã được thay thế: " + arr_2);
+        let n = +prompt("Nhập số lương phần tử mảng");
+        let arr = [];
+        for (let i = 0 ; i < n ; i++ ){
+            arr[i] = +prompt("Nhập giá trị thứ " +(i+1));
+            for( j=0 ; j <arr.length ; j++ ) {
+                if(arr[j] = "-"){
+                    arr.splice(j , 1 , "_");
+                }
+            }
+        }
+        document.write("Chuỗi đã thay thế: " + arr);
+    </script>
+</body>
+</html>
