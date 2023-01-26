@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo hàm nhận vào hai tham số</title>
+</head>
+<body>
+    <input type="text" name="" id="parameter_1" placeholder="Nhập tham số đầu" onchange="addParameter()">
+    <input type="text" name="" id="parameter_2" placeholder="Nhập tham số thứ 2" onchange="addParameter()">
+    <p>Result: <span id="result"></span></p>
+</body>
+</html>
+<script>
+        
+    function addParameter(){
+        let a = +document.getElementById("parameter_1").value;
+        let b = +document.getElementById("parameter_2").value;
+            if(a > b){
+                document.getElementById("result").innerHTML = "Tham số a lớn hơn Tham số b";
+            }
+            if( a <= b){
+                let sum = a + b;
+                document.getElementById("result").innerHTML = sum;
+            }
+    }
+</script>

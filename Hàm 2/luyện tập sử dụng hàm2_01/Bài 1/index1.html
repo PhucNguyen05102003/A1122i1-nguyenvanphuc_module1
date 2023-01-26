@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi  "Xin chao"</title>
+</head>
+<body>
+    <input type="text" id="chains" placeholder="Nhập chuỗi của bạn" onchange="alertMessage(this.value)">
+    <p>Result: <span id="result"></span></p>
+    <script>
+        function alertMessage(){
+            let x = document.getElementById("chains").value;
+            // isNaN() == true : nghĩa là giá trị trả về true nếu nó không phải là số
+            if(isNaN(x) == true){
+                document.getElementById("result").innerHTML = x;
+            }else {
+                document.getElementById("result").innerHTML = "xin mời bạn nhập lại";
+            }
+        }
+    </script>
+</body>
+</html>
