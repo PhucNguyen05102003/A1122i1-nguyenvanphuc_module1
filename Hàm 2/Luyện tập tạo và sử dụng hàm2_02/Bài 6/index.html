@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm nhập vào một số và kiểm tra xem nó có phải là số nguyên dương không</title>
+</head>
+<body>
+    <script>
+        function number(value){
+            // Number.isInteger trả về true nếu nó là giá trị số nguyên
+            if(Number.isInteger(value) == true && value > 0){
+                alert("true");
+            }
+            if(value <= 0 ){
+                alert("false");
+            }
+        }
+        let n = +prompt("Nhập số bất kỳ")
+        let numbers = number(n);
+    </script>
+</body>
+</html>

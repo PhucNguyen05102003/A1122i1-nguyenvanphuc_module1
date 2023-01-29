@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm truyền vào hai số nguyên bất kỳ, thực hiện chuyển đổi chỗ số nguyên đó</title>
+</head>
+<body>
+    <script>
+        function integer(value_1 , value_2){
+            document.write("Trước khi đổi chỗ : " +value_1 +", "+ value_2 +"</br>");
+            let c = value_1;
+            value_1 = value_2;
+            value_2 = c;
+            document.write("Sau khi đổi chỗ : " +value_1 +", "+ value_2);
+        }
+        let a = +prompt("Nhập số nguyên thứ nhất");
+        let b = +prompt("Nhập số nguyên thứ hai");
+        integer(a,b);
+
+    </script>
+</body>
+</html>

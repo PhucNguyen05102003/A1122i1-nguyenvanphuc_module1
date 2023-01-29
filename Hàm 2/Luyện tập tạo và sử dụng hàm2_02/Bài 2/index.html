@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm tính diện tích, tính chu vi hình tròn</title>
+</head>
+<body>
+    <script>
+        function circle(x){
+            let pi = 3.14;
+            S = Math.pow(x, 2)*pi;
+            C = (x*2)*pi;
+            return S, C;
+        }
+        let r = +prompt("Nhập bán kính hình tròn");
+        let circles = circle(r);
+        document.write("Diện tích hình tròn: "+ S +"</br>");
+        document.write("Chu vi hình tròn: "+ C +"</br>");
+    </script>
+</body>
+</html>

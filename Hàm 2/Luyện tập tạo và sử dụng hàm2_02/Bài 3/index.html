@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        function func1(x){
+            if( x == 2 ){
+                return 2;
+            }else{
+                return x*func1(x-1);
+            }
+        }
+        let a = +prompt("Nhập số nguyên bất kỳ");
+        let func2 = func1(a);
+        document.write("Giai thừa của số "+a+" là: "+ func2);
+    </script>
+</body>
+</html>

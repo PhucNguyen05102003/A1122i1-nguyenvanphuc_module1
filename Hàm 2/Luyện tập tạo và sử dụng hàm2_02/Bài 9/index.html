@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không</title>
+</head>
+<body>
+    <script>
+        function array(arr,b){
+            let count = 0;
+            for (let j =0; j<arr.length; j++) {
+                if(arr[j] == b ){
+                    count++
+                    document.write("Có" +count+ " ký tự " +b+ " trong mảng");
+                }else{
+                    document.write("-1");
+                }
+            }
+                
+        }
+        let n = +prompt("Nhập số lượng phần tử của mảng");
+        let arr1 = [];
+        for(let i=0 ; i<n; i++){
+            arr1[i] = prompt("Nhập phần tử thứ " +(i+1));
+        }
+        let a = prompt("Nhập vào một ký tự bất kỳ");
+        array(arr1,a);
+    </script>
+</body>
+</html>
